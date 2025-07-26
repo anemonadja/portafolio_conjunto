@@ -1,29 +1,29 @@
 {
-    "perfil": {
-        "intro": {
+    "perfil": [
+        {
             "avatar": true,
             "avatar_img": "pendiente",
             "nombre": "Nadja Constanza Villarroel Navarro",
             "intro_perfil": "Texto pendiente",
-            "edad": 37
-            },
-        "direccion": {
+            "edad": 37,
+            "direccion": {
                 "ciudad": "Santiago, Chile",
                 "calle": "Víctor Manuel",
                 "numero": 1442,
                 "codigo_postal": 8361575
-                },
-        "estado civil": {
+            },
+            "estado civil": {
                 "soltera": true,
                 "casada": false,
                 "hijos": false
             },
-        "redes": {
+            "redes": {
                 "linkedin": "https://www.linkedin.com/in/nadjavillarroel",
                 "github": "https://github.com/anemonadja",
                 "behance": "https://behance.net/pendiente"
             }
-    },
+        }
+    ],
     "estudios": [
         {
             "alias": "colegio",
@@ -31,6 +31,7 @@
             "lugar": "Colegio Particular Antonio Rendic",
             "ciudad": "Antofagasta, Chile",
             "asunto": "Enseñanza Media",
+            "descripcion": "Texto pendiente",
             "años": "2003 - 2005"
         },
         {
@@ -39,6 +40,7 @@
             "lugar": "Universidad de Chile, FAU",
             "ciudad": "Santiago, Chile",
             "asunto": "Diseño Industrial",
+            "descripcion": "Texto pendiente",
             "años": "2007 - 2013"
         },
         {
@@ -47,6 +49,7 @@
             "lugar": "Centro de Extensión Universidad Católica, PUC",
             "ciudad": "Santiago, Chile",
             "asunto": "Curso \"Herramientas para el diseño y gestión de proyectos\"",
+            "descripcion": "Texto pendiente",
             "años": "2014"
         },
         {
@@ -55,6 +58,7 @@
             "lugar": "Universidad de Chile, FEN",
             "ciudad": "Santiago, Chile",
             "asunto": "Diplomado \"Emprendimiento y Administración de Empresas\"",
+            "descripcion": "Texto pendiente",
             "años": "2015"
         },
         {
@@ -63,6 +67,7 @@
             "lugar": "Becas Capital Humano, CORFO",
             "ciudad": "Santiago, Chile",
             "asunto": "Curso \"Desarrollo de Aplicaciones Front - End\"",
+            "descripcion": "Texto pendiente",
             "años": "oct2024 - mar2025"
         },
         {
@@ -71,6 +76,7 @@
             "lugar": "Asociación de Informáticos UTE, USACH",
             "ciudad": "Santiago, Chile",
             "asunto": "Taller Front - End 2025",
+            "descripcion": "Texto pendiente",
             "años": "may2025 - ago2025"
         }
     ],
@@ -81,7 +87,6 @@
             "lugar": "Universidad de Chile, FAU",
             "ciudad": "Santiago, Chile",
             "asunto": "Monitora Geometría I para Diseño Industrial",
-            "descripcion": "Texto pendiente",
             "años": "2010"
         },
         {
@@ -90,7 +95,6 @@
             "lugar": "Ecodiseño.SA",
             "ciudad": "Santiago, Chile",
             "asunto": "Diseño / Práctica profesional",
-            "descripcion": "Texto pendiente",
             "años": "2012"
         },
         {
@@ -99,7 +103,6 @@
             "lugar": "Facultad de Ingeniería, PUC",
             "ciudad": "Santiago, Chile",
             "asunto": "Ayudante de Diseño Industrial para ingeniería",
-            "descripcion": "Texto pendiente",
             "años": "2013 - 2018"
         },
         {
@@ -108,7 +111,6 @@
             "lugar": "LAMACRE S.A",
             "ciudad": "Santiago, Chile",
             "asunto": "Fundadora / Diseño y Gestión",
-            "descripcion": "Texto pendiente",
             "años": "2013 - 2018"
         },
         {
@@ -117,7 +119,6 @@
             "lugar": "Freelance",
             "ciudad": "Santiago, Chile",
             "asunto": "Diseño, Fabricación digital, Maquetas y prototipos, producción de obra para artistas",
-            "descripcion": "Texto pendiente",
             "años": "2014 - a la fecha"
         },
         {
@@ -126,7 +127,6 @@
             "lugar": "Universidad Gabriela Mistral",
             "ciudad": "Santiago, Chile",
             "asunto": "Profesora Adjunta \"Costos y Evaluación de Proyectos\"",
-            "descripcion": "Texto pendiente",
             "años": "2016"
         },
         {
@@ -135,7 +135,6 @@
             "lugar": "Smartraining",
             "ciudad": "Santiago, Chile",
             "asunto": "Product Owner",
-            "descripcion": "Texto pendiente",
             "años": "2017-2018"
         },
         {
@@ -144,7 +143,6 @@
             "lugar": "Helmlinger Joyas, LTDA.",
             "ciudad": "Santiago, Chile",
             "asunto": "Diseñadora industrial, fotografía, creadora de contenido, administración digital",
-            "descripcion": "Texto pendiente",
             "años": "2018 a la fecha"
         }
     ],
