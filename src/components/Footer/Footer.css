@@ -5,13 +5,16 @@ footer {
     color: #BCFFB0;
     text-align: center;
     background-color: #524D61;
-    opacity: 30%;
-    border-radius: 8px;
+    opacity: 0.6;
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px 0px;
 }
 
 
 @media (max-width: 768px) {
-    footer .container{
+    footer {
             justify-content: center;
+            opacity: 0.45;
         }
 }

@@ -1,4 +1,4 @@
-import anemonalogo from './../assets/anemonalogo.svg';
+import anemonalogo from '../../public/ane-favicon2.svg';
 
 const Home = () => {
   return (

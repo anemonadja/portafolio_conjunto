@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Header.css';
-import icono from '../../assets/anemonalogo.svg'
+import icono from '../../../public/ane-favicon9.svg'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
@@ -14,8 +15,17 @@ const Header = () => {
         setMenuOpen(false);
     }
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY>10);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () =>window.removeEventListener('scroll', handleScroll);
+        }, []);
+
     return (
-        <header className='header'>
+        <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <Link to="/" className="logo">
                 <img src={icono} alt='Logo anemonadja' className='logo-img'/>
                 <h1>anemonadja</h1>

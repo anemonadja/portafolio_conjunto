@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <p>&copy; nadja.villarroel.n@gmail.com | anemonadja 2025 </p>
+            <h5>nadja.villarroel.n@gmail.com | &copy; anemonadja 2025 </h5>
         </footer>
     );
 };
