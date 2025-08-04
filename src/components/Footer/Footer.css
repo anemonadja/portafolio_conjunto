@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #BCFFB0;
+    text-align: center;
+    background-color: #524D61;
+    opacity: 30%;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    footer .container{
+            justify-content: center;
+        }
+}
