@@ -1,6 +1,6 @@
 import React from 'react';
 import '../pages/Home.css'
-import fotoperfil1 from '../../src/assets/img/fotoperfil3.jpg';
+import fotoperfil1 from '../../src/assets/img/fotoperfil5.jpg';
 
 const Home = () => {
   

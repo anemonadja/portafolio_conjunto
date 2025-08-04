@@ -1,11 +1,93 @@
-.about-foto1 {
-  width: 300px;         /* o el tamaño que prefieras */
-  height: 300px;        /* debe ser igual al ancho para que quede un círculo perfecto */
-  object-fit: cover;    /* para que la imagen no se deforme */
-  border-radius: 50%;   /* ¡esto crea la forma circular! */
-  overflow: hidden;     /* por si acaso */
-  border: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* opcional: sombra para darle profundidad */
+.container {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  align-content: center;
+  height: 100vh; /* Ocupar toda la altura de la pantalla */
+  padding: 0 2rem;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+
+.about-foto1 {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-foto1:hover {
+  content: url('../../src/assets/img/fotoperfil6.jpg'); /* Imagen alternativa */
+}
+
+.about-texto {
+  max-width: 600px;
+}
+
+.about-titulos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-titulos p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Iconos de redes */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #BCFFB0;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Botones de tecnologías estilo vidrio */
+.tech-buttons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tech-buttons span {
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  color: #BCFFB0;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-foto1 {
+    margin-bottom: 1rem;
+  }
 }
