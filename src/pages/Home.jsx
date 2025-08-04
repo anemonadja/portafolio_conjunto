@@ -1,28 +1,31 @@
-import anemonalogo from '../../public/ane-favicon2.svg';
+import React from 'react';
+import '../pages/Home.css'
+import fotoperfil1 from '../../src/assets/img/fotoperfil3.jpg';
 
 const Home = () => {
+  
+  
+  
+  
   return (
-    <main>
+
       <section className="container">
         <div className="about">
-        <img className="about-foto1" src={anemonalogo} alt="Una imagen de Nadja, dibujada."/>
-        <div className="about-texto">
+          <img className="about-foto1" src={fotoperfil1} alt="Una imagen de Nadja, dibujada."/>
+          <div className="about-texto">
             <div className="about-titulos">
-              <h2>
-                <br />
-                <span className="accent">Nadja</span> Villarroel Navarro
-              </h2>
-            </div>
-            <p>
+              <h2><span className="accent">NADJA</span> VILLARROEL NAVARRO</h2>
+              <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
               fuga, sed possimus deserunt incidunt eius fugiat asperiores
               tempore, nesciunt corrupti eaque qui itaque hic. Ipsum qui porro
               quam reprehenderit facere.
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </section>
-    </main>
+
   );
 };
 

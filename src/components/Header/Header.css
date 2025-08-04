@@ -75,7 +75,7 @@
 }
 
 .hamburger:hover .bar{
-  background-color: #524D61;
+  background-color: #B5FC36;
 }
 
 .hamburger.open .bar:nth-child(1) {
@@ -96,6 +96,7 @@
     top: 110%;
     right: 0;
     background-color: #524D61;
+    
     flex-direction: column;
     width: 100%;
     align-items: end;

@@ -1,0 +1,11 @@
+.about-foto1 {
+  width: 300px;         /* o el tamaño que prefieras */
+  height: 300px;        /* debe ser igual al ancho para que quede un círculo perfecto */
+  object-fit: cover;    /* para que la imagen no se deforme */
+  border-radius: 50%;   /* ¡esto crea la forma circular! */
+  overflow: hidden;     /* por si acaso */
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* opcional: sombra para darle profundidad */
+  align-items: center;
+  align-content: center;
+}
