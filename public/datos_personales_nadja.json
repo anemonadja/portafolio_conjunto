@@ -3,8 +3,10 @@
         {
             "avatar": true,
             "avatar_img": "pendiente",
-            "nombre": "Nadja Constanza Villarroel Navarro",
-            "intro_perfil": "Texto pendiente",
+            "nombre1": "NADJA",
+            "nombre2": "VILLARROEL NAVARRO",
+            "intro_perfil": "Mi experiencia en modelado 3D, proyectos interdisciplinarios, fotografía de producto, enseñanza y diseño digital me permite crear soluciones web con una fuerte base visual, técnica y centrada en el usuario.Actualmente en transición profesional hacia el área tecnológica, con formación formal en desarrollo de aplicaciones web, busco aportar mi visión creativa, orden metodológico y ganas de aprender en entornos colaborativos.",
+            "descripcion_perfil": "Desarrolladora Front-End con formación en Diseño Industrial",
             "edad": 37,
             "direccion": {
                 "ciudad": "Santiago, Chile",

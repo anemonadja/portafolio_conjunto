@@ -1,31 +1,71 @@
-import React from 'react';
-import '../pages/Home.css'
-import fotoperfil1 from '../../src/assets/img/fotoperfil5.jpg';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import '../pages/Home.css';
+import fotoperfil1 from '../../src/assets/img/fotoperfil11.jpg';
 
 const Home = () => {
-  
-  
-  
-  
+  const [perfil, setPerfil] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get('/datos_personales_nadja.json')
+      .then((response) => {
+        console.log (response.data.perfil[0]);
+        setPerfil(response.data.perfil[0]);
+      })
+      .catch((error) => {
+        console.error('Error al cargar los datos del perfil:', error);
+      });
+  }, []);
+
   return (
+    <section className="container">
+      <div className="about">
+        <img className="about-foto1" src={fotoperfil1} alt="Foto de Nadja" />
 
-      <section className="container">
-        <div className="about">
-          <img className="about-foto1" src={fotoperfil1} alt="Una imagen de Nadja, dibujada."/>
-          <div className="about-texto">
-            <div className="about-titulos">
-              <h2><span className="accent">NADJA</span> VILLARROEL NAVARRO</h2>
-              <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-              fuga, sed possimus deserunt incidunt eius fugiat asperiores
-              tempore, nesciunt corrupti eaque qui itaque hic. Ipsum qui porro
-              quam reprehenderit facere.
-              </p>
-            </div>
+        <div className="about-texto">
+          <div className="about-titulos">
+            <h2>{perfil?.nombre1}</h2>
+            <h3>{perfil?.nombre2}</h3>
+            <h4>{perfil?.descripcion_perfil}</h4>
+            <p>{perfil?.intro_perfil}</p>
           </div>
-        </div>
-      </section>
 
+          <div className="social-icons">
+            {perfil?.redes?.github && (
+              <a href={perfil.redes.github} target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-github"></i>
+              </a>
+            )}
+            {perfil?.redes?.linkedin && (
+              <a href={perfil.redes.linkedin} target="_blank" rel="noopener noreferrer">
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+            )}
+            <a href="/CV_Nadja.pdf" download>
+              <i className="fa-solid fa-file-arrow-down"></i>
+            </a>
+            <a href="mailto:nadjavillarroel@gmail.com">
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+
+          <div className="tech-buttons">
+            {[...(perfil?.herramientas_tech || []), ...(perfil?.herramientas_diseno || [])]
+              .map((tech, index) => (
+                <span key={index}>{tech}</span>
+            ))}
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </section>
   );
 };
 

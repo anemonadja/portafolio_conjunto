@@ -21,7 +21,6 @@
   align-items: center;
   gap: 10px;
   color: white;
-  font-family: "DynaPuff", sans-serif;
   font-size: 10px;
   text-decoration: none;
   text-shadow: 0.5px 0.5px 3px #524D61;
@@ -46,14 +45,19 @@
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #c141e0;
+  margin-right: 50px;
 }
 
 .nav-link:visited {
-  color: #B5FC36;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #BC9FD9;
+}
+
+.nav-link:visited:hover {
+  color: #BC9FD9;
 }
 
 .hamburger {

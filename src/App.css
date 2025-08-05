@@ -1,8 +1,28 @@
 body {
-  background-image: url('/public/wallp11.webp');
+  background-image: url('/public/wallp13_1920x1080.webp');
   background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center;
-  cursor: auto;
+  background-repeat: no-repeat;
+  background-position: center top;
+  cursor: grab;
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  body {
+    background-image: url('/public/wallp13_1024x1366.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+  body {
+    background-image: url('/public/wallp13_640x960.webp');
+    background-size: cover;   /* o contain si prefieres que se vea completa */
+    background-repeat: repeat-y;
+    background-position: center top;
+  }
 }
 
