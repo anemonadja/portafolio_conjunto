@@ -45,9 +45,11 @@ const Home = () => {
             <a href="/CV_Nadja.pdf" target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-file-arrow-down"></i>
             </a>
-            <a href="mailto:nadjavillarroel@gmail.com">
+            {perfil?.email && (
+            <a href={`mailto:${perfil.email}`}>
               <i className="fa-solid fa-envelope"></i>
             </a>
+  )}
           </div>
         </div>
       </div>
