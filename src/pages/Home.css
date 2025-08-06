@@ -51,7 +51,7 @@
 
 .about-titulos p {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 500;
 }
 
@@ -73,55 +73,47 @@
   transform: scale(1.2);
 }
 
-/* Botones de tecnologías estilo vidrio */
-.tech-buttons {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-
-.tech-buttons span {
-  padding: 5px 10px;
-  border-radius: 12px;
-  background: rgba(183, 15, 15, 0.978);
-  border: 1px solid rgb(27, 221, 46);
-  backdrop-filter: blur(4px);
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-/* Tablet */
-@media (max-width: 768px) {
+/* Tablet y mobile */
+@media (max-width: 830px) {
   .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
-    height: auto;
+    max-width: 800px;
   }
 
   .about {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
   }
 
   .about-foto1 {
     width: 250px;
     height: 250px;
-    margin-top: 20px;
   }
 
   .about-texto {
-    padding: 0;
-  }
+  max-width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+  .about-titulos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .about-titulos h2 {
     font-size: 60px;
     margin-bottom: 10px;
-    margin-left: 0;
   }
 
   .about-titulos h3 {
@@ -139,18 +131,4 @@
   .social-icons {
     justify-content: center;
   }
-}
-
-
-
-
-
-
-
-
-
-
-/*Mobile*/
-@media (max-width: 480px) {
-  
 }

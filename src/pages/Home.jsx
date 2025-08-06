@@ -49,20 +49,6 @@ const Home = () => {
               <i className="fa-solid fa-envelope"></i>
             </a>
           </div>
-
-          <div className="tech-buttons">
-            {[...(perfil?.herramientas_tech || []), ...(perfil?.herramientas_diseno || [])]
-              .map((tech, index) => (
-                <span key={index}>{tech}</span>
-            ))}
-          </div>
-
-
-
-
-
-
-
         </div>
       </div>
     </section>

@@ -7,7 +7,7 @@ body {
 }
 
 /*Tablet*/
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   body {
     background-image: url('/public/wallp13_1024x1366.webp');
     background-size: cover;
@@ -16,13 +16,4 @@ body {
   }
 }
 
-/*Mobile*/
-@media (max-width: 480px) {
-  body {
-    background-image: url('/public/wallp13_640x960.webp');
-    background-size: cover;   /* o contain si prefieres que se vea completa */
-    background-repeat: repeat-y;
-    background-position: center top;
-  }
-}
 
