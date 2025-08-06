@@ -74,7 +74,7 @@
 }
 
 /* Tablet y mobile */
-@media (max-width: 830px) {
+@media (max-width: 810px) {
   .container {
     display: flex;
     flex-direction: column;
