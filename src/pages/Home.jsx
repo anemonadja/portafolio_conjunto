@@ -42,7 +42,7 @@ const Home = () => {
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             )}
-            <a href="/CV_Nadja.pdf" download>
+            <a href="/CV_Nadja.pdf" target="_blank" rel="noopener noreferrer">
               <i className="fa-solid fa-file-arrow-down"></i>
             </a>
             <a href="mailto:nadjavillarroel@gmail.com">
