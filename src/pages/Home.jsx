@@ -1,22 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import '../pages/Home.css';
 import fotoperfil1 from '../../src/assets/img/fotoperfil11.jpg';
 
 const Home = () => {
-  const [perfil, setPerfil] = useState(null);
 
-  useEffect(() => {
-    axios
-      .get('/datos_personales_nadja.json')
-      .then((response) => {
-        console.log (response.data.perfil[0]);
-        setPerfil(response.data.perfil[0]);
-      })
-      .catch((error) => {
-        console.error('Error al cargar los datos del perfil:', error);
-      });
-  }, []);
 
   return (
     <section className="container">
@@ -25,19 +11,9 @@ const Home = () => {
 
         <div className="about-texto">
           <div className="about-titulos">
-            <h2>{perfil?.nombre1}</h2>
-            <h3>{perfil?.nombre2}</h3>
-            <h4>{perfil?.descripcion_perfil}</h4>
-            <p>{perfil?.intro_perfil}</p>
+            <h2>EN CONSTRUCCIÓN</h2>
           </div>
-
           <div className="social-icons">
-            
-            {perfil?.redes?.linkedin && (
-              <a href={perfil.redes.linkedin} target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-linkedin"></i>
-              </a>
-            )}
             
           </div>
         </div>
