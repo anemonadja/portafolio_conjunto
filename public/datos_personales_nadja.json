@@ -3,10 +3,10 @@
         {
             "avatar": true,
             "avatar_img": "pendiente",
-            "nombre1": "NADJA",
-            "nombre2": "VILLARROEL NAVARRO",
-            "intro_perfil": "Mi experiencia en modelado 3D, proyectos interdisciplinarios, fotografía de producto, enseñanza y diseño digital me permite crear soluciones web con una fuerte base visual, técnica y centrada en el usuario.Actualmente en transición profesional hacia el área tecnológica, con formación formal en desarrollo de aplicaciones web, busco aportar mi visión creativa, orden metodológico y ganas de aprender en entornos colaborativos.",
-            "descripcion_perfil": "Desarrolladora Front-End con formación en Diseño Industrial",
+            "nombre1": "EN",
+            "nombre2": "CONSTRUCCIÓN",
+            "intro_perfil": " ",
+            "descripcion_perfil": " ",
             "edad": 37,
             "email": "nadja.villarroel.n@gmail.com",
             "direccion": {
@@ -19,11 +19,6 @@
                 "soltera": true,
                 "casada": false,
                 "hijos": false
-            },
-            "redes": {
-                "linkedin": "https://www.linkedin.com/in/nadjavillarroel",
-                "github": "https://github.com/anemonadja",
-                "behance": "https://behance.net/pendiente"
             }
         }
     ],

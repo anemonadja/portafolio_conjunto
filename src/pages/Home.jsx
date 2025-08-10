@@ -32,24 +32,13 @@ const Home = () => {
           </div>
 
           <div className="social-icons">
-            {perfil?.redes?.github && (
-              <a href={perfil.redes.github} target="_blank" rel="noopener noreferrer">
-                <i className="fa-brands fa-github"></i>
-              </a>
-            )}
+            
             {perfil?.redes?.linkedin && (
               <a href={perfil.redes.linkedin} target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             )}
-            <a href="/CV_Nadja.pdf" target="_blank" rel="noopener noreferrer">
-              <i className="fa-solid fa-file-arrow-down"></i>
-            </a>
-            {perfil?.email && (
-            <a href={`mailto:${perfil.email}`}>
-              <i className="fa-solid fa-envelope"></i>
-            </a>
-  )}
+            
           </div>
         </div>
       </div>

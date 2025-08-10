@@ -35,9 +35,9 @@ const Header = () => {
             {menuOpen && <div className="overlay" onClick={toggleMenu}></div>}
 
             <nav className={`nav ${menuOpen ? "open" : ""}`}>
-                <Link to="/about" className="nav-link" onClick={soltarMenu}>ABOUT</Link>
-                <Link to="/proyectos" className="nav-link"onClick={soltarMenu}>PROYECTOS</Link>
-                <Link to="/galeria" className="nav-link"onClick={soltarMenu}>GALERÍA</Link>
+                <Link to="/about" className="nav-link" onClick={soltarMenu}> </Link>
+                <Link to="/proyectos" className="nav-link"onClick={soltarMenu}> </Link>
+                <Link to="/galeria" className="nav-link"onClick={soltarMenu}> </Link>
             </nav>
                 
                 
