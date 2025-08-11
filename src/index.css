@@ -21,4 +21,14 @@ html, body {
 main {
   margin-top: 80px;
   flex: 1; /*esto empuja el footer al final*/
+  align-content: center;
+}
+
+@media (max-width: 500px) {
+  main {
+  margin: 0px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
 }
